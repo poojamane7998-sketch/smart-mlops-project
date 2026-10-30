@@ -25,6 +25,7 @@ jobs:
       - name: Train model
         run: python -m src.train
 
-      - name: Run tests
-        run: pytest -q
-        
+      - name: Run Tests
+        run: python -m pytest -v
+        env:
+            PYTHONPATH:
